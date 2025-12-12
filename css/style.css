@@ -16,15 +16,14 @@
  @font-face {
       font-family: 'Crimson Text';
       src: url('../fonts/Crimson_Text/CrimsonText-Bold.ttf') format('truetype');
-      font-weight:bold; 
+      font-style: normal;
+      font-weight: 700; 
       font-display: swap;
     }
 
 body {
     font-family: 'Crimson Text', serif;
-    src: url('../fonts/Crimson_Text/CrimsonText-Regular.ttf') format('truetype');
-    font-style: normal; 
-    font-display: swap;
+
     background-color: #FFFCF3;
     margin: 2vw;
     max-width: 100%;
@@ -53,9 +52,7 @@ body {
 
 .sidenav a, .dropdown-btn{
   font-family: 'Crimson Text', serif;
-  src: url('../fonts/Crimson_Text/CrimsonText-Regular.ttf') format('truetype');
-  font-style: normal; 
-  font-display: swap;
+
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   border: none;
@@ -110,18 +107,15 @@ body {
 /*italics*/
 .italic-part {
   font-family: 'Crimson Text', serif;
-  src: url('../fonts/Crimson_Text/CrimsonText-Italic.ttf') format('truetype');
   font-style: italic;
-  font-display: swap;
+
 }
 
 /*bold*/
 .bold-part {
   font-family: 'Crimson Text', serif;
-  src: url('../fonts/Crimson_Text/CrimsonText-Bold.ttf') format('truetype');
-  font-style: normal;
-  font-weight: bold;
-  font-display: swap;
+  font-weight: 700;
+
   
 }
 
