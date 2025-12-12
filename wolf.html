@@ -6,27 +6,88 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>Wolf</title>
 <link rel="stylesheet" href="css/style.css">
+<script src="js.js"></script>
 </head>
-
+<body>
 <!-- source: https://en.wikipedia.org/wiki/Wolf -->
+<!--dropdown collapsible sidebar-->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <button class="dropdown-btn">Birds 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="cattleegret.html">Cattle Egret</a>
+    <a href="cowbird.html">Cowbird</a>
+  </div>
+  <button class="dropdown-btn">Insects 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="horsefly.html">Horsefly</a>
+    <a href="scarab.html">Rainbow Scarab</a>
+  </div>
+   <button class="dropdown-btn">Predators 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="mountainlion.html">Mountain Lion</a>
+    <a href="wolf.html">Wolf</a>
+  </div>
+  <button class="dropdown-btn">Vegetation 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="bluegrass.html">Bluegrass</a>
+    <a href="dandelion.html">Dandelion</a>
+  </div>
+</div>
 
-<h1>Wolf (Canis lupus)</h1>
-<p> A canine native to North America and Eurasia.</p>
+<div class="flip-card">
+
+    <div class="flip-card-inner">
+        <div class="flip-card-front">
+<div class="container">
+<span class="menu" onclick="openNav()">&#9776;</span>
+    <div class="main">
+<h1 style="white-space: pre;">Wolf
+<span class=italic-part>(Canis lupus)</span></h1>
+
+<p> A canine with thick fur that comes in various colours like brown, grey, black, or a mixture. They are native to 
+    North America and Eurasia. Wolves are known to travel in packs and have complex social
+    structures.
+</p>
 
 <h3>Connections</h3>
 <p>The relationship between wolves and horses is an example of predation, where
     one party benefits while the other dies. Wolves primarily hunt hooved mammals and
-    are known for their cooperative method of hunting.
+    excel at cooperative hunting practices.
 </p>
+</div>
 
-<p>Phylum: Chordata
-Class: Mammalia
-Order: Carnivora
-Family: Canidae
-Genus: Canis</p>
+<div class="side">
+<p>
+<span class=bold-part>Phylum:</span> Chordata
+<span class=bold-part>Class:</span> Mammalia
+<span class=bold-part>Order:</span> Carnivora
+<span class=bold-part>Family:</span> Canidae
+<span class=bold-part>Genus:</span> Canis</p>
+</div>
+</div>
 
-<img src="images/wolf1.png"/>
-<img src="images/wolf2.png"/>
+</div>
 
+<div class="flip-card-back">
+<div class="foreground-content">
+    <div class="image-container">
+<img src="images/wolf1.png" alt="sketch of wolf standing" class="wolf1"/></div>
+ <div class="image-container">
+<img src="images/wolf2.png" alt="sketch of wolf head" class="wolf2"/></div>
+</div>
+</div>
+</div>
+
+</div>
 </body>
 </html>

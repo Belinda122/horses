@@ -6,11 +6,54 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>Dandelion</title>
 <link rel="stylesheet" href="css/style.css">
+<script src="js.js"></script>
 </head>
-
+<body>
 <!-- source: https://en.wikipedia.org/wiki/Taraxacum_officinale -->
+ <!--dropdown collapsible sidebar-->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <button class="dropdown-btn">Birds 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="cattleegret.html">Cattle Egret</a>
+    <a href="cowbird.html">Cowbird</a>
+  </div>
+  <button class="dropdown-btn">Insects 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="horsefly.html">Horsefly</a>
+    <a href="scarab.html">Rainbow Scarab</a>
+  </div>
+   <button class="dropdown-btn">Predators 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="mountainlion.html">Mountain Lion</a>
+    <a href="wolf.html">Wolf</a>
+  </div>
+  <button class="dropdown-btn">Vegetation 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="bluegrass.html">Bluegrass</a>
+    <a href="dandelion.html">Dandelion</a>
+  </div>
+</div>
 
-<h1>Dandelion (Taraxacum officinale)</h1>
+<div class="flip-card">
+
+    <div class="flip-card-inner">
+        <div class="flip-card-front">
+<div class="container">
+<span class="menu" onclick="openNav()">&#9776;</span>
+    <div class="main">
+<h1>Dandelion
+<span class=italic-part>(Taraxacum officinale)</span></h1>
+
 <p> A flowering perennial plant with a distinctive yellow flower head.
     It is extremely tolerant and propagates easily. As such, it can 
     be found all over the world.</p>
@@ -18,16 +61,35 @@
 <h3>Connections</h3>
 <p>The relationship between dandelions and horses is an example of mutualism.
     Horses can consume dandelions as a source of nutrients, and in doing so
-    can aid in seed dispersal through fecal matter. 
+    can aid in seed dispersal through fecal matter. As a plant known for its resilience and 
+    effectiveness at absorbing nutrients, dandelions can compete with other plants like
+    <span class="tooltip" tabindex="0">
+bluegrass
+  <img src="images/bluegrass1.png" class="tooltip-image" alt="Bluegrass"> 
+     </span> for resources in areas where they coexist.
 </p>
+</div>
 
-<p>Phylum: Tracheophyta
-Class: Magnoliopsida
-Order: Asterales
-Family:	Asteraceae
-Genus: Taraxacum</p>
+<div class="side">
+<p>
+<span class=bold-part>Phylum:</span> Tracheophyta
+<span class=bold-part>Class:</span> Magnoliopsida
+<span class=bold-part>Order:</span> Asterales
+<span class=bold-part>Family:</span>Asteraceae
+<span class=bold-part>Genus:</span> Taraxacum</p>
+</div>
+</div>
 
-<img src="images/dandelion1.png"/>
+</div>
 
+<div class="flip-card-back">
+<div class="foreground-content">
+    <div class="image-container">
+<img src="images/dandelion1.png" alt="sketch of dandelion" class="dandelion1"/></div>
+</div>
+</div>
+</div>
+
+</div>
 </body>
 </html>

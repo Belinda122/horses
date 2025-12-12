@@ -6,11 +6,54 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>Bluegrass</title>
 <link rel="stylesheet" href="css/style.css">
+<script src="js.js"></script>
 </head>
-
+<body>
 <!-- source: https://en.wikipedia.org/wiki/Poa_pratensis -->
+<!--dropdown collapsible sidebar-->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <button class="dropdown-btn">Birds 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="cattleegret.html">Cattle Egret</a>
+    <a href="cowbird.html">Cowbird</a>
+  </div>
+  <button class="dropdown-btn">Insects 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="horsefly.html">Horsefly</a>
+    <a href="scarab.html">Rainbow Scarab</a>
+  </div>
+   <button class="dropdown-btn">Predators 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="mountainlion.html">Mountain Lion</a>
+    <a href="wolf.html">Wolf</a>
+  </div>
+  <button class="dropdown-btn">Vegetation 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="bluegrass.html">Bluegrass</a>
+    <a href="dandelion.html">Dandelion</a>
+  </div>
+</div>
 
-<h1>Bluegrass (Poa pratensis)</h1>
+<div class="flip-card">
+
+    <div class="flip-card-inner">
+        <div class="flip-card-front">
+<div class="container">
+<span class="menu" onclick="openNav()">&#9776;</span>
+    <div class="main">
+<h1 style="white-space: pre;">Bluegrass
+<span class=italic-part>(Poa pratensis)</span></h1>
+
 <p> Also known as Kentucky bluegrass. A species of grass that can be found in
     Europe, North Asia, and North America.
 </p>
@@ -21,15 +64,32 @@ an example of mutualism, where both parties benefit from
 the interaction. Bluegrass is a source of food for horses, and the act of 
 grazing disturbs the soil and stimulates new, healthy growth. Horse fecal matter
 also returns nutrients to the soil, aided by the activity of dung beetles like 
-the rainbow scarab.</p>
+the <span class="tooltip" tabindex="0">
+  rainbow scarab.
+  <img src="images/scarab1.png" class="tooltip-image" alt="Rainbow scarab">
+</span></p>
+</div>
 
-<p>Phylum: Magnoliophyta
-Class: Liliopsida
-Order: Cyperales
-Family: Poaceae
-Genus: Poa</p>
+<div class="side">
+<p>
+<span class=bold-part>Phylum:</span> Magnoliophyta
+<span class=bold-part>Class:</span> Liliopsida
+<span class=bold-part>Order:</span> Cyperales
+<span class=bold-part>Family:</span> Poaceae
+<span class=bold-part>Genus:</span> Poa</p>
+</div>
+</div>
 
-<img src="images/bluegrass1"/>
+</div>
 
+<div class="flip-card-back">
+<div class="foreground-content">
+    <div class="image-container">
+<img src="images/bluegrass1.png" alt="sketch of bluegrass" class="bluegrass1"/></div>
+</div>
+</div>
+</div>
+
+</div>
 </body>
 </html>

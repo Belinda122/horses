@@ -1,0 +1,1087 @@
+ @font-face {
+      font-family: 'crimson text regular';
+      src: url('/fonts/Crimson_Text/CrimsonText-Regular.ttf') format('truetype');
+      font-style: normal; 
+      font-display: swap;
+    }
+
+ @font-face {
+      font-family: 'crimson text italic';
+      src: url('/fonts/Crimson_Text/CrimsonText-Italic.ttf') format('truetype');
+      font-style: italic; 
+      font-display: swap;
+    }
+
+ @font-face {
+      font-family: 'crimson text bold';
+      src: url('/fonts/Crimson_Text/CrimsonText-Bold.ttf') format('truetype');
+      font-style: bold; 
+      font-display: swap;
+    }
+
+body {
+    font-family: 'crimson text regular', serif;
+    background-color: #FFFCF3;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+.container-wrapper {
+    width: 100vw;
+    height: 100vh;
+    max-width: 1500px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    margin: 0;
+     
+}
+
+/*positions for home page diagram*/
+.image-container {
+   width: 95%; 
+    height: auto;
+    position: relative;  
+    aspect-ratio: 16 / 8; /* maintains proportional height */
+    overflow: auto;
+    scrollbar-width: none;
+
+    border-radius: 5px;
+    border: 1.9px solid #000;
+    outline: 1.9px solid black; 
+    outline-offset: 13px;
+   margin: 0;
+    
+    
+}
+/*headings*/
+h1 {
+    position: absolute;
+    font-weight: normal;
+    font-size: 3rem;
+    padding-left: 3vw;
+    padding-top: 0.5vh;
+    user-select: none;
+    z-index: 5;
+
+}
+
+h2 {
+    font-family: crimson text bold;
+    font-size: 1rem;
+    position: absolute;
+    user-select: none;
+
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+    user-select: none;
+
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #9a8b53
+}
+
+button{
+    background: none;
+    border: none;
+    font-family: 'crimson text regular', serif;
+    font-size: 1rem;
+    color: black;
+    user-select: none;
+}
+
+button:hover, .label.active, .label:active{
+    text-decoration: underline;
+    color: #9a8b53;
+    cursor: pointer;
+    
+}
+
+
+span{
+    font-size: 0.5rem;
+    vertical-align: middle;
+
+
+}
+
+
+
+.labeli{
+    position: absolute;
+
+    top: 25%;
+    left: 7%;
+}
+
+#labelh{
+    position:absolute;
+    top:30%;
+    left: 6.55%;
+}
+
+#labelrs{
+    position:absolute;
+    top: 33%;
+    left: 6.55%;
+}
+
+.labelp{
+    position: absolute;
+
+    top: 32%;
+    left: 88%;
+}
+
+#labelml{
+    position:absolute;
+    top: 37%;
+    left: 87.6%;
+}
+
+#labelw{
+    position:absolute;
+    top: 40.1%;
+    left: 87.6%;
+}
+.labelv{
+    position: absolute;
+
+    bottom: 26%;
+    left: 13%;
+}
+
+#labeld{
+    position:absolute;
+    bottom: 24.7%;
+    left: 12.7%;
+}
+
+#labelb2{
+    position:absolute;
+    bottom: 21.7%;
+    left: 12.7%;
+}
+.labelb1{
+    position: absolute;
+
+    top: 23%;
+    left: 60%;
+}
+#labelce{
+    position:absolute;
+    top: 27.8%;
+    left: 59.55%;
+}
+
+#labelbc{
+    position:absolute;
+    top: 30.7%;
+    left: 59.55%;
+}
+
+
+
+
+.image-container img {
+    position: absolute;
+    pointer-events: none;
+    user-select: none;
+    
+}
+
+.toggle {
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+}
+
+.toggle.show {
+    opacity: 1;
+}
+
+.image-container img.horse {
+    bottom: -2%;
+    left: 18.5%;
+    width: 55%;
+    
+}
+
+.image-container img#imagece {
+    top: 26%;
+    left:52.5%;
+    width: 6.5%;
+    
+}
+
+.image-container img#imagebc {
+    top: 39.5%;
+    left: 53%;
+    width: 6%;
+    
+}
+
+.image-container img#imageh {
+    top: 34.5%;
+    left: 18%;
+    width: 4%;
+    
+}
+
+.image-container img#images {
+    top: 36%;
+    left: 18%;
+    width: 3.5%;
+    
+}
+
+.image-container img#imageml {
+    top: 33%;
+    right: 13%;
+    width: 13%;
+    
+}
+
+.image-container img#imagew {
+    top: 35%;
+    right: 14%;
+    width: 13%;
+    
+}
+
+.image-container img#imageb2 {
+    bottom: 6%;
+    left: 20%;
+    width: 5%;
+    
+}
+
+.image-container img#imaged {
+    bottom: 6%;
+    left: 19.2%;
+    width: 7%;
+    
+}
+
+/* by back leg*/
+.image-container img.grass1 {
+    bottom: 17%;
+    left: 53%;
+    width: 2.5%;
+    
+}
+/* by lifted leg*/
+.image-container img.grass2 {
+    bottom: 14%;
+    left: 37%;
+    width: 3.3%;
+    transform: scaleX(-1);
+    
+}
+
+/* by predator*/
+.image-container img.grass3 {
+    bottom: 40%;
+    right: 10%;
+    width: 2%;
+    
+}
+
+/* by insect*/
+.image-container img.grass4 {
+    top: 40%;
+    left: 21%;
+    width: 1.7%;
+    
+}
+
+/* second to the left*/
+.image-container img.grass5 {
+    bottom: 30%;
+    left: 30%;
+    width: 2.1%;
+    
+}
+
+/* second to the right*/
+.image-container img.grass6 {
+    bottom: 10%;
+    right: 25%;
+    width: 3.1%;
+    transform: scaleX(-1);
+    
+}
+
+/*by front leg 2*/
+.image-container img.grass7 {
+    bottom: 27%;
+    left: 43.8%;
+    width: 2.3%;
+    z-index: -1;
+    
+}
+
+/*by vegetation*/
+.image-container img.grass8 {
+    bottom: 5%;
+    left: 9%;
+    width: 4%;
+    
+}
+/*frontmost*/
+.image-container img.grass9 {
+    bottom: 2%;
+    left: 48%;
+    width: 4.2%;
+    transform: scaleX(-1);
+    
+}
+
+/* small devices*/
+@media only screen and (max-width: 500px){
+.container-wrapper {
+    min-width: 100vw;
+    min-height: 100vh;
+    height: auto;
+    width: auto;
+ 
+     
+}
+/*positions for home page diagram*/
+.image-container {
+   width: 90%; 
+   max-width: 350px;
+    aspect-ratio: 9 / 16; /* maintains proportional height */
+    
+ border-radius: 5px;
+    border: 1.9px solid #000;
+    outline: 1.9px solid black; 
+    outline-offset: 13px;
+   margin: 0;
+    
+}
+/*headings*/
+h1 {
+    font-size: 2.3rem;
+    padding-left: 6vw;
+    padding-top: 0vh;
+
+}
+
+h2 {
+    font-size: 0.9rem;
+
+
+}
+
+
+button{
+    font-size: 0.9rem;
+
+}
+
+.labeli{
+    position:absolute;
+    top: 22.7%;
+    left: 6.9%;
+}
+
+#labelh{
+    position:absolute;
+    top:27%;
+    left: 5.3%;
+}
+
+#labelrs{
+    position:absolute;
+    top: 29.8%;
+    left: 5.3%;
+}
+
+.labelp{
+    position:absolute;
+    top: 15%;
+    left: 60%;
+}
+
+#labelml{
+    position:absolute;
+    top: 19.3%;
+    left: 58.3%;
+}
+
+#labelw{
+    position:absolute;
+    top: 21.9%;
+    left: 58.3%;
+}
+.labelv{
+    position:absolute;
+
+    bottom: 6%;
+    left: 50%;
+}
+
+#labeld{
+    position:absolute;
+    bottom: 4.9%;
+    left: 48.6%;
+}
+
+#labelb2{
+    position:absolute;
+    bottom: 2.2%;
+    left: 48.6%;
+}
+.labelb1{
+    top: 40.8%;
+    left: 30%;
+}
+#labelce{
+    position:absolute;
+    top: 45.18%;
+    left: 28.5%;
+}
+
+#labelbc{
+    position:absolute;
+    top: 47.8%;
+    left: 28.5%;
+}
+
+
+
+.image-container img.horse {
+    bottom: 6.5%;
+    left: -19%;
+    width: 115%;
+    
+}
+
+.image-container img#imagece {
+    top: 50.6%;
+    left:55%;
+    width: 12%;
+    
+}
+
+.image-container img#imagebc {
+    top: 56.9%;
+    left: 55%;
+    width: 12%;
+    
+}
+
+.image-container img#imageh {
+    top: 34%;
+    left: 18%;
+    width: 15%;
+    
+}
+
+.image-container img#images {
+    top: 35%;
+    left: 18%;
+    width: 15%;
+    
+}
+
+.image-container img#imageml {
+    top: 28%;
+    right: 16%;
+    width: 30%;
+    
+}
+
+.image-container img#imagew {
+    top: 29%;
+    right: 15%;
+    width: 30%;
+    
+}
+
+.image-container img#imageb2 {
+    bottom: 3%;
+    left: 75%;
+    width: 15%;
+    
+}
+
+.image-container img#imaged {
+    bottom: 3%;
+    left: 75%;
+    width: 15%;
+    
+}
+
+/* by back leg*/
+.image-container img.grass1 {
+    bottom: 17%;
+    left: 53%;
+    width: 6%;
+    
+}
+/* by lifted leg*/
+.image-container img.grass2 {
+    bottom: 14%;
+    left: 37%;
+    width: 6%;
+    transform: scaleX(-1);
+    
+}
+
+/* by predator*/
+.image-container img.grass3 {
+    bottom: 40%;
+    right: 10%;
+    width: 4%;
+    
+}
+
+/* by insect*/
+.image-container img.grass4 {
+    top: 40%;
+    left: 21%;
+    width: 3%;
+    
+}
+
+/* second to the left*/
+.image-container img.grass5 {
+    bottom: 16%;
+    left: 13%;
+    width: 5%;
+    
+}
+
+/* second to the right*/
+.image-container img.grass6 {
+   
+    opacity: 0;
+    
+}
+
+/*by front leg 2*/
+.image-container img.grass7 {
+    bottom: 12%;
+    left: 88.8%;
+    width: 6%;
+    z-index: -1;
+    
+}
+
+/*by vegetation*/
+.image-container img.grass8 {
+    bottom: 5%;
+    left: 9%;
+    width: 7%;
+    
+}
+/*frontmost*/
+.image-container img.grass9 {
+    opacity: 0;
+    
+}
+}
+
+/*medium screen*/
+@media only screen and (min-width: 501px) and (max-width: 800px){
+.container-wrapper {
+    min-width: 100vw;
+    min-height: 100vh;
+    height: auto;
+    width: auto;
+ 
+     
+}
+/*positions for home page diagram*/
+.image-container {
+   width: 90%; 
+   max-width: 500px;
+    aspect-ratio: 3 / 4; /* maintains proportional height */
+    
+ border-radius: 5px;
+    border: 1.9px solid #000;
+    outline: 1.9px solid black; 
+    outline-offset: 13px;
+   margin: 0;
+    
+}
+/*headings*/
+h1 {
+    font-size: 2.3rem;
+    padding-left: 6vw;
+    padding-top: 0vh;
+
+}
+
+h2 {
+    font-size: 0.9rem;
+
+
+}
+
+
+button{
+    font-size: 0.9rem;
+
+}
+
+.labeli{
+    position:absolute;
+    top: 19%;
+    left: 6.9%;
+}
+
+#labelh{
+    position:absolute;
+    top:23.5%;
+    left: 5.6%;
+}
+
+#labelrs{
+    position:absolute;
+    top: 26%;
+    left: 5.6%;
+}
+
+.labelp{
+    position:absolute;
+    top: 15%;
+    left: 60%;
+}
+
+#labelml{
+    position:absolute;
+    top: 19.3%;
+    left: 58.7%;
+}
+
+#labelw{
+    position:absolute;
+    top: 21.9%;
+    left: 58.7%;
+}
+.labelv{
+    position:absolute;
+
+    bottom: 7%;
+    left: 27%;
+}
+
+#labeld{
+    position:absolute;
+    bottom: 5.9%;
+    left: 26%;
+}
+
+#labelb2{
+    position:absolute;
+    bottom: 3.3%;
+    left: 26%;
+}
+.labelb1{
+    top: 39%;
+    left: 61.8%;
+}
+#labelce{
+    position:absolute;
+    top: 43.1%;
+    left: 60.8%;
+}
+
+#labelbc{
+    position:absolute;
+    top: 45.6%;
+    left: 60.8%;
+}
+
+
+
+.image-container img.horse {
+    bottom: 6.5%;
+    left: -19%;
+    width: 100%;
+    
+}
+
+.image-container img#imagece {
+    top: 41.6%;
+    left:43%;
+    width: 12%;
+    
+}
+
+.image-container img#imagebc {
+    top: 50%;
+    left: 44%;
+    width: 12%;
+    
+}
+
+.image-container img#imageh {
+    top: 31%;
+    left: 18%;
+    width: 10%;
+    
+}
+
+.image-container img#images {
+    top: 32%;
+    left: 18%;
+    width: 10%;
+    
+}
+
+.image-container img#imageml {
+    top: 24%;
+    right: 35%;
+    width: 24%;
+    z-index: -1;
+    
+}
+
+.image-container img#imagew {
+    top: 24%;
+    right: 35%;
+    width: 24%;
+    
+}
+
+.image-container img#imageb2 {
+    bottom: 3%;
+    left: 70%;
+    width: 15%;
+    
+}
+
+.image-container img#imaged {
+    bottom: 3%;
+    left: 70%;
+    width: 15%;
+    
+}
+
+/* by back leg*/
+.image-container img.grass1 {
+    bottom: 17%;
+    left: 53%;
+    width: 6%;
+    
+}
+/* by lifted leg*/
+.image-container img.grass2 {
+    bottom: 14%;
+    left: 37%;
+    width: 6%;
+    transform: scaleX(-1);
+    
+}
+
+/* by predator*/
+.image-container img.grass3 {
+    bottom: 40%;
+    right: 10%;
+    width: 4%;
+    
+}
+
+/* by insect*/
+.image-container img.grass4 {
+    top: 40%;
+    left: 21%;
+    width: 3%;
+    
+}
+
+/* second to the left*/
+.image-container img.grass5 {
+    bottom: 16%;
+    left: 13%;
+    width: 5%;
+    
+}
+
+/* second to the right*/
+.image-container img.grass6 {
+   
+    opacity: 0;
+    
+}
+
+/*by front leg 2*/
+.image-container img.grass7 {
+    bottom: 7%;
+    left: 70.8%;
+    width: 7%;
+    z-index: -1;
+    
+}
+
+/*by vegetation*/
+.image-container img.grass8 {
+    bottom: 5%;
+    left: 9%;
+    width: 7%;
+    
+}
+/*frontmost*/
+.image-container img.grass9 {
+    opacity: 0;
+    
+}
+}
+
+/*large screen*/
+@media only screen and (min-width: 801px) and (max-width: 1100px){
+.container-wrapper {
+    min-width: 100vw;
+    min-height: 100vh;
+    height: auto;
+    width: auto;
+ 
+     
+}
+/*positions for home page diagram*/
+.image-container {
+   width: 90%; 
+   max-width: 800px;
+    aspect-ratio: 16 /13; /* maintains proportional height */
+    
+ border-radius: 5px;
+    border: 1.9px solid #000;
+    outline: 1.9px solid black; 
+    outline-offset: 13px;
+   margin: 0;
+    
+}
+/*headings*/
+h1 {
+    font-size: 2.3rem;
+    padding-left: 6vw;
+    padding-top: 0vh;
+
+}
+
+h2 {
+    font-size: 0.9rem;
+
+
+}
+
+
+button{
+    font-size: 0.9rem;
+
+}
+
+.labeli{
+    position:absolute;
+    top: 46%;
+    left: 6.18%;
+}
+
+#labelh{
+    position:absolute;
+    top:50.7%;
+    left: 5.3%;
+}
+
+#labelrs{
+    position:absolute;
+    top: 53.6%;
+    left: 5.3%;
+}
+
+.labelp{
+    position:absolute;
+    top: 14%;
+    left: 81.1%;
+}
+
+#labelml{
+    position:absolute;
+    top: 18.9%;
+    left: 80.3%;
+}
+
+#labelw{
+    position:absolute;
+    top: 22.1%;
+    left: 80.3%;
+}
+.labelv{
+    position:absolute;
+
+    bottom: 9%;
+    left: 59.1%;
+}
+
+#labeld{
+    position:absolute;
+    bottom: 7.8%;
+    left: 58.4%;
+}
+
+#labelb2{
+    position:absolute;
+    bottom: 5%;
+    left: 58.4%;
+}
+.labelb1{
+    top: 20.8%;
+    left: 32%;
+}
+#labelce{
+    position:absolute;
+    top: 25.5%;
+    left:31.3%;
+}
+
+#labelbc{
+    position:absolute;
+    top: 28.4%;
+    left:31.3%;
+}
+
+
+
+.image-container img.horse {
+    bottom: 6.5%;
+    left: 1%;
+    width: 80%;
+    
+}
+
+.image-container img#imagece {
+    top: 24.6%;
+    left:49%;
+    width: 10%;
+    
+}
+
+.image-container img#imagebc {
+    top: 37%;
+    left: 49.7%;
+    width: 10%;
+    
+}
+
+.image-container img#imageh {
+    top: 60%;
+    left: 10%;
+    width: 7%;
+    
+}
+
+.image-container img#images {
+    top: 61%;
+    left: 10%;
+    width: 7%;
+    
+}
+
+.image-container img#imageml {
+    top: 28%;
+    right: 16%;
+    width: 18%;
+    
+}
+
+.image-container img#imagew {
+    top: 29%;
+    right: 17%;
+    width: 18%;
+    
+}
+
+.image-container img#imageb2 {
+    bottom: 5%;
+    left: 74%;
+    width: 10%;
+    
+}
+
+.image-container img#imaged {
+    bottom: 5%;
+    left: 74%;
+    width: 10%;
+    
+}
+
+/* by back leg*/
+.image-container img.grass1 {
+    bottom: 17%;
+    left: 53%;
+    width: 4%;
+    
+}
+/* by lifted leg*/
+.image-container img.grass2 {
+    bottom: 14%;
+    left: 37%;
+    width: 4%;
+    transform: scaleX(-1);
+    
+}
+
+/* by predator*/
+.image-container img.grass3 {
+    bottom: 40%;
+    right: 10%;
+    width: 3%;
+    
+}
+
+/* by insect*/
+.image-container img.grass4 {
+    opacity:0;
+}
+
+/* second to the left*/
+.image-container img.grass5 {
+    bottom: 24%;
+    left: 13%;
+    width: 2.8%;
+    
+}
+
+/* second to the right*/
+.image-container img.grass6 {
+   
+    opacity: 0;
+    
+}
+
+/*by front leg 2*/
+.image-container img.grass7 {
+    bottom: 17%;
+    left: 68.8%;
+    width: 3.7%;
+    z-index: -1;
+    
+}
+
+/*by vegetation*/
+.image-container img.grass8 {
+    bottom: 5%;
+    left: 9%;
+    width: 7%;
+    
+}
+/*frontmost*/
+.image-container img.grass9 {
+    opacity: 0;
+    
+}
+}

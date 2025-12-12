@@ -6,34 +6,103 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>Cattle Egret</title>
 <link rel="stylesheet" href="css/style.css">
+<script src="js.js"></script>
 </head>
-
+<body>
 <!-- source: https://nhpbs.org/natureworks/cattleegret -->
+ <!--dropdown collapsible sidebar-->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <button class="dropdown-btn">Birds 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="cattleegret.html">Cattle Egret</a>
+    <a href="cowbird.html">Cowbird</a>
+  </div>
+  <button class="dropdown-btn">Insects 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="horsefly.html">Horsefly</a>
+    <a href="scarab.html">Rainbow Scarab</a>
+  </div>
+   <button class="dropdown-btn">Predators 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="mountainlion.html">Mountain Lion</a>
+    <a href="wolf.html">Wolf</a>
+  </div>
+  <button class="dropdown-btn">Vegetation 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="bluegrass.html">Bluegrass</a>
+    <a href="dandelion.html">Dandelion</a>
+  </div>
+</div>
 
-<h1>Cattle Egret (Bubulcus ibis)</h1>
-<p> A small white bird that belongs to the heron family. 
-    Native to Africa, southern Europe, and parts of Asia, 
-    but can be found all around the world due to a 
-    symbiotic relationship with livestock.</p>
+<!-- flip card https://www.w3schools.com/howto/howto_css_flip_card.asp-->
+<div class="flip-card">
 
-<h3>Connections</h3>
-<p>The relationship between cattle egrets and horses is 
+    <div class="flip-card-inner">
+        <div class="flip-card-front">
+<div class="container">
+<span class="menu" onclick="openNav()">&#9776;</span>
+    <div class="main">
+    <h1>Cattle Egret 
+<span class=italic-part>(Bubulcus ibis)</span></h1>
+    <p>A small white bird that belongs to the heron family. 
+Native to Africa, southern Europe, and parts of Asia, 
+but can be found all around the world due to a 
+symbiotic relationship with livestock.</p>
+
+    <h3>Connections</h3>
+    <p>The relationship between cattle egrets and horses is 
 an example of mutualism, where both parties benefit from 
 the interaction. The cattle egret’s diet is mostly insectivorous, often 
 eating insects stirred up by other animals. These insects 
-can include pests that bother horses, like horseflies. The 
-cattle egret will often perch on the horse’s back, gaining a vantage point 
+can include pests that bother horses, like 
+<span class="tooltip" tabindex="0">
+  horseflies.
+  <img src="images/horsefly1.png" class="tooltip-image" alt="Horsefly">
+</span> The cattle egret will often perch on the horse’s back, gaining a vantage point 
 and better access to pests.</p>
 
-<p>Phylum: Chordata
-Class: Aves
-Order: Ciconiiformes
-Family: Ardeidae
-Genus: Bubulcus</p>
+    </div>
 
-<img src="images/cattleegret1.png"/>
-<img src="images/cattleegret2.png"/>
-<img src="images/cattleegret3.png"/>
+    <div class="side">
+<p>
+<span class=bold-part>Phylum:</span> Chordata
+<span class=bold-part>Class:</span> Aves
+<span class=bold-part>Order:</span> Ciconiiformes
+<span class=bold-part>Family:</span> Ardeidae
+<span class=bold-part>Genus:</span> Bubulcus</p>
+</div>
+</div>
+
+</div>
+
+<div class="flip-card-back">
+  
+<div class="foreground-content">
+    <div class="image-container">
+<img src="images/cattleegret1.png" alt="sketch of cattle egret taking off"/>
+    </div>
+    <div class="image-container">
+<img src="images/cattleegret2.png" alt="sketch of cattle egret in flight"/>
+    </div>
+<div class="image-container">
+<img src="images/cattleegret3.png" alt="sketch cattle egret standing" class="cattleegret3"/>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
 
 </body>
 </html>

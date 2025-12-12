@@ -6,29 +6,86 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>Mountain Lion</title>
 <link rel="stylesheet" href="css/style.css">
+<script src="js.js"></script>
 </head>
-
+<body>
 <!-- source:https://www.nwf.org/Educational-Resources/Wildlife-Guide/Mammals/Mountain-Lion-->
+<!--dropdown collapsible sidebar-->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <button class="dropdown-btn">Birds 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="cattleegret.html">Cattle Egret</a>
+    <a href="cowbird.html">Cowbird</a>
+  </div>
+  <button class="dropdown-btn">Insects 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="horsefly.html">Horsefly</a>
+    <a href="scarab.html">Rainbow Scarab</a>
+  </div>
+   <button class="dropdown-btn">Predators 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="mountainlion.html">Mountain Lion</a>
+    <a href="wolf.html">Wolf</a>
+  </div>
+  <button class="dropdown-btn">Vegetation 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="bluegrass.html">Bluegrass</a>
+    <a href="dandelion.html">Dandelion</a>
+  </div>
+</div>
 
-<h1>Mountain Lion (Puma concolor)</h1>
-<p> A large feline with a beige coat. As an adaptable species, it can
-    be found all over the Americas in diverse environments.</p>
+<div class="flip-card">
+
+    <div class="flip-card-inner">
+        <div class="flip-card-front">
+<div class="container">
+<span class="menu" onclick="openNav()">&#9776;</span>
+    <div class="main">
+<h1>Mountain Lion
+<span class=italic-part>(Puma concolor)</span></h1>
+
+<p> A large feline with a short beige coat, also commonly referred to as cougars, panthers, or pumas. As an adaptable species, mountain lions can
+    be found all over the Americas in diverse environments. They are solitary animals, and are known to be territorial.</p>
 
 <h3>Connections</h3>
 <p>The relationship between mountain lions and horses is 
-an example of predation, where one party benefits while the other dies. Horses
-are a source of food for mountain lions.
-
+an example of predation, where one party benefits while the other dies. While mountain lions
+primarily hunt deer, they have been also been known to prey on horses and other hooved mammals.
 </p>
+</div>
 
-<p>Phylum: Chordata
-Class: Mammalia
-Order: Carnivora
-Family: Felidae
-Genus: Puma</p>
+<div class="side">
+<p>
+<span class=bold-part>Phylum:</span> Chordata
+<span class=bold-part>Class:</span> Mammalia
+<span class=bold-part>Order:</span> Carnivora
+<span class=bold-part>Family:</span> Felidae
+<span class=bold-part>Genus:</span> Puma</p>
+</div>
+</div>
 
-<img src="images/mountainlion1.png"/>
-<img src="images/mountainlion2.png"/>
+</div>
 
+<div class="flip-card-back">
+<div class="foreground-content">
+    <div class="image-container">
+<img src="images/mountainlion1.png" alt="sketch of mountain lion prowling" class="mountainlion1"/></div>
+    <div class="image-container">
+<img src="images/mountainlion2.png" alt="sketch of mountain lion head" class="mountainlion2"/></div>
+</div>
+</div>
+</div>
+
+</div>
 </body>
 </html>

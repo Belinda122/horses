@@ -6,11 +6,54 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>Rainbow Scarab</title>
 <link rel="stylesheet" href="css/style.css">
+<script src="js.js"></script>
 </head>
-
+<body>
 <!-- source: https://en.wikipedia.org/wiki/Phanaeus_vindex -->
+<!--dropdown collapsible sidebar-->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <button class="dropdown-btn">Birds 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="cattleegret.html">Cattle Egret</a>
+    <a href="cowbird.html">Cowbird</a>
+  </div>
+  <button class="dropdown-btn">Insects 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="horsefly.html">Horsefly</a>
+    <a href="scarab.html">Rainbow Scarab</a>
+  </div>
+   <button class="dropdown-btn">Predators 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="mountainlion.html">Mountain Lion</a>
+    <a href="wolf.html">Wolf</a>
+  </div>
+  <button class="dropdown-btn">Vegetation 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="bluegrass.html">Bluegrass</a>
+    <a href="dandelion.html">Dandelion</a>
+  </div>
+</div>
 
-<h1>Rainbow Scarab (Phanaeus vindex)</h1>
+<div class="flip-card">
+
+    <div class="flip-card-inner">
+        <div class="flip-card-front">
+<div class="container">
+<span class="menu" onclick="openNav()">&#9776;</span>
+    <div class="main">
+<h1>Rainbow Scarab
+<span class=italic-part>(Phanaeus vindex)</span></h1>
+
 <p> A colourful, bulky beetle with a shiny exoskeleton. It is native to 
     North America and commonly found near pasture animals.
 </p>
@@ -19,17 +62,35 @@
 <p>The relationship between rainbow scarabs and horses is 
 an example of mutualism, where both parties benefit from 
 the interaction. The scarab eat and utilize horse dung for reproduction, and 
-by doing so provide benefits to the ecosystem. They control the fly and parasite
-population, recycle the nutrients in the dung, and clean fecal matter.</p>
+by doing so provide benefits to the ecosystem. By doing this, they control the fly and parasite
+population (such as the <span class="tooltip" tabindex="0">
+  horsefly
+  <img src="images/horsefly1.png" class="tooltip-image" alt="Horsefly">
+</span> population), recycle the nutrients in the dung, and clean fecal matter.</p>
+</div>
 
-<p>Phylum: Arthropoda
-Class: Insecta
-Order: Coleoptera
-Family: Scarabaeidae
-Genus: Phanaeus</p>
+<div class="side">
+<p>
+<span class=bold-part>Phylum:</span> Arthropoda
+<span class=bold-part>Class:</span> Insecta
+<span class=bold-part>Order:</span> Coleoptera
+<span class=bold-part>Family:</span> Scarabaeidae
+<span class=bold-part>Genus:</span> Phanaeus</p>
+</div>
+</div>
 
-<img src="images/scarab1.png"/>
-<img src="images/scarab2.png"/>
+</div>
 
+<div class="flip-card-back">
+<div class="foreground-content">
+    <div class="image-container">
+<img src="images/scarab1.png" alt="sketch of rainbow scarab side profile" class="scarab1"/></div>
+ <div class="image-container">
+<img src="images/scarab2.png" alt="sketch of rainbow scarab birds eye view" class="scarab2"/></div>
+</div>
+</div>
+</div>
+
+</div>
 </body>
 </html>
