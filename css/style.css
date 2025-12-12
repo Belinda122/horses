@@ -22,6 +22,9 @@
 
 body {
     font-family: 'crimson text', serif;
+    src: url('/fonts/Crimson_Text/CrimsonText-Regular.ttf') format('truetype');
+    font-style: normal; 
+    font-display: swap;
     background-color: #FFFCF3;
     margin: 2vw;
     max-width: 100%;
