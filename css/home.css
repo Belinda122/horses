@@ -1,27 +1,27 @@
  @font-face {
       font-family: 'Crimson Text';
-      src: url('/fonts/Crimson_Text/CrimsonText-Regular.ttf') format('truetype');
+      src: url('../fonts/Crimson_Text/CrimsonText-Regular.ttf') format('truetype');
       font-style: normal; 
       font-display: swap;
     }
 
  @font-face {
       font-family: 'Crimson Text';
-      src: url('/fonts/Crimson_Text/CrimsonText-Italic.ttf') format('truetype');
+      src: url('../fonts/Crimson_Text/CrimsonText-Italic.ttf') format('truetype');
       font-style: italic; 
       font-display: swap;
     }
 
  @font-face {
       font-family: 'Crimson Text';
-      src: url('/fonts/Crimson_Text/CrimsonText-Bold.ttf') format('truetype');
+      src: url('../fonts/Crimson_Text/CrimsonText-Bold.ttf') format('truetype');
       font-weight:bold; 
       font-display: swap;
     }
 
 body {
     font-family: 'Crimson Text', serif;
-    src: url('/fonts/Crimson_Text/CrimsonText-Regular.ttf') format('truetype');
+    src: url('../fonts/Crimson_Text/CrimsonText-Regular.ttf') format('truetype');
     background-color: #FFFCF3;
     box-sizing: border-box;
     width: 100%;
@@ -74,7 +74,7 @@ h1 {
 
 h2 {
     font-family: 'Crimson Text', serif;
-  src: url('/fonts/Crimson_Text/CrimsonText-Bold.ttf') format('truetype');
+  src: url('../fonts/Crimson_Text/CrimsonText-Bold.ttf') format('truetype');
   font-style: normal;
   font-weight: bold;
   font-display: swap;
@@ -102,7 +102,7 @@ button{
     background: none;
     border: none;
     font-family: 'crimson text', serif;
-    src: url('/fonts/Crimson_Text/CrimsonText-Regular.ttf') format('truetype');
+    src: url('../fonts/Crimson_Text/CrimsonText-Regular.ttf') format('truetype');
     font-style: normal; 
     font-display: swap;
     font-size: 1rem;
