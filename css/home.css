@@ -20,6 +20,9 @@
       font-weight: 700; 
       font-display: swap;
     }
+* {
+  -webkit-tap-highlight-color: transparent;
+}
 
 body {
     font-family: 'Crimson Text', serif;
