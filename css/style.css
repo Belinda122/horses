@@ -1,22 +1,22 @@
 
   @font-face {
-      font-family: 'crimson text regular';
+      font-family: 'crimson text';
       src: url('/fonts/Crimson_Text/CrimsonText-Regular.ttf') format('truetype');
       font-style: normal; 
       font-display: swap;
     }
 
  @font-face {
-      font-family: 'crimson text italic';
+      font-family: 'crimson text';
       src: url('/fonts/Crimson_Text/CrimsonText-Italic.ttf') format('truetype');
       font-style: italic; 
       font-display: swap;
     }
 
  @font-face {
-      font-family: 'crimson text bold';
+      font-family: 'crimson text';
       src: url('/fonts/Crimson_Text/CrimsonText-Bold.ttf') format('truetype');
-      font-style: bold; 
+      font-weight:bold; 
       font-display: swap;
     }
 
@@ -103,12 +103,14 @@ body {
 
 /*italics*/
 .italic-part {
-  font-family: crimson text italic;
+  font-family: crimson text;
+  font-style: italic;
 }
 
 /*bold*/
 .bold-part {
-  font-family: crimson text bold;
+  font-family: crimson text;
+  font-weight: bold;
 }
 
 /*headings*/
