@@ -117,7 +117,7 @@ span{
 }
 
 
-
+/*label positioning*/
 .labeli{
     position: absolute;
 
@@ -193,7 +193,7 @@ span{
 
 
 
-
+/*image positioning*/
 .image-container img {
     position: absolute;
     pointer-events: none;
@@ -357,7 +357,7 @@ span{
  
      
 }
-/*positions for home page diagram*/
+
 .image-container {
    width: 90%; 
    max-width: 350px;

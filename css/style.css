@@ -21,7 +21,7 @@
     }
 
 body {
-    font-family: 'crimson text regular', serif;
+    font-family: 'crimson text', serif;
     background-color: #FFFCF3;
     margin: 2vw;
     max-width: 100%;
@@ -93,7 +93,7 @@ body {
   
 }
 
-
+/*open sidebar*/
 .menu{
   position: absolute;
   top: 8vh;
@@ -244,7 +244,7 @@ p {
   align-self: flex-start;
 }
 
-/*tooltip*/
+/*tooltip https://www.w3schools.com/css/css_tooltip.asp*/
 .tooltip{
   position: relative;
   display: inline-block;
