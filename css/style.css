@@ -104,13 +104,19 @@ body {
 /*italics*/
 .italic-part {
   font-family: crimson text;
+  src: url('/fonts/Crimson_Text/CrimsonText-Italic.ttf') format('truetype');
   font-style: italic;
+  font-display: swap;
 }
 
 /*bold*/
 .bold-part {
   font-family: crimson text;
+  src: url('/fonts/Crimson_Text/CrimsonText-Bold.ttf') format('truetype');
+  font-style: normal;
   font-weight: bold;
+  font-display: swap;
+  
 }
 
 /*headings*/
