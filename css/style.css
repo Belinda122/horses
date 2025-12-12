@@ -1,27 +1,27 @@
 
   @font-face {
-      font-family: 'crimson text';
+      font-family: 'Crimson Text';
       src: url('/fonts/Crimson_Text/CrimsonText-Regular.ttf') format('truetype');
       font-style: normal; 
       font-display: swap;
     }
 
  @font-face {
-      font-family: 'crimson text';
+      font-family: 'Crimson Text';
       src: url('/fonts/Crimson_Text/CrimsonText-Italic.ttf') format('truetype');
       font-style: italic; 
       font-display: swap;
     }
 
  @font-face {
-      font-family: 'crimson text';
+      font-family: 'Crimson Text';
       src: url('/fonts/Crimson_Text/CrimsonText-Bold.ttf') format('truetype');
       font-weight:bold; 
       font-display: swap;
     }
 
 body {
-    font-family: 'crimson text', serif;
+    font-family: 'Crimson Text', serif;
     src: url('/fonts/Crimson_Text/CrimsonText-Regular.ttf') format('truetype');
     font-style: normal; 
     font-display: swap;
@@ -52,7 +52,10 @@ body {
 }
 
 .sidenav a, .dropdown-btn{
-  font-family: 'crimson text regular', serif;
+  font-family: 'Crimson Text', serif;
+  src: url('/fonts/Crimson_Text/CrimsonText-Regular.ttf') format('truetype');
+  font-style: normal; 
+  font-display: swap;
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   border: none;
@@ -106,7 +109,7 @@ body {
 
 /*italics*/
 .italic-part {
-  font-family: crimson text;
+  font-family: 'Crimson Text', serif;
   src: url('/fonts/Crimson_Text/CrimsonText-Italic.ttf') format('truetype');
   font-style: italic;
   font-display: swap;
@@ -114,7 +117,7 @@ body {
 
 /*bold*/
 .bold-part {
-  font-family: crimson text;
+  font-family: 'Crimson Text', serif;
   src: url('/fonts/Crimson_Text/CrimsonText-Bold.ttf') format('truetype');
   font-style: normal;
   font-weight: bold;
